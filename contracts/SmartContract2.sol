@@ -17,7 +17,7 @@ contract SmartContract is ERC721, Ownable {
         string uri;
     }
 
-    constructor() ERC721("NFTS TEST", "NFTST") {}
+    constructor() ERC721("Smart Contract", "SC") {}
 
     function _setTokenURI(uint256 tokenId, string memory _tokenURI) internal {
         _tokenURIs[tokenId] = _tokenURI;
